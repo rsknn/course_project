@@ -19,7 +19,7 @@
   Если $Q < -L$ (где $-L = -1.5$), фиксируется состояние **«СНИЖЕНИЕ»**; если $-L \le Q \le L$ ($-1.5 \le Q \le 1.5$) — **«НОРМА»**; если $Q > L$ ($Q > 1.5$) — **«РОСТ»**.
 * **Правило инцидента (Два из трёх):**
   Инцидент возникает, если не менее двух компонентов одновременно находятся в состоянии, отличном от «НОРМА»:
-  Incident(t) = ((S<sub>HDD</sub>[t] ≠ НОРМА) ∧ (S<sub>SSD</sub>[t] ≠ НОРМА)) ∨ ((S<sub>HDD</sub>[t] ≠ НОРМА) ∧ (S<sub>APP</sub>[t] ≠ НОРМА)) ∨ ((S<sub>SSD</sub>[t] ≠ НОРМА) ∧ (S<sub>APP</sub>[t] ≠ НОРМА))
+  $\text{Incident}(t) = ((S_{\text{HDD}}[t] \neq \text{НОРМА}) \land (S_{\text{SSD}}[t] \neq \text{НОРМА}))$ $\lor$ $((S_{\text{HDD}}[t] \neq \text{НОРМА}) \land (S_{\text{APP}}[t] \neq \text{НОРМА}))$ $\lor$ $((S_{\text{SSD}}[t] \neq \text{НОРМА}) \land (S_{\text{APP}}[t] \neq \text{НОРМА}))$
 * **Структура Incident:**
   ```c
   typedef struct {
